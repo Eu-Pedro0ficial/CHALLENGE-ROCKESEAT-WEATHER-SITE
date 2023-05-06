@@ -107,7 +107,28 @@
                         </span>
                     </div>
                     <div class="time-period">
-                        Ainda a ser feito
+                        <span class="current-time">16:01</span>
+                        <div class="time-period-chart">
+                            <svg viewBox="0 0 36 18" style="overflow: visible;">
+                                <linearGradient id="donutGradient" gradientUnits="userSpaceOnUse" gradientTransform="rotate(80)">
+                                    <stop offset="0%" stop-color="rgba(251, 219, 96, 0.2)"></stop>
+                                    <stop offset="101%" stop-color="rgba(251, 219, 96, 0)"></stop>
+                                </linearGradient>
+                                <mask id="myMask">
+                                    <rect x="0" y="0" width="27.72" height="18" fill="white"></rect>
+                                </mask>
+                                <path d="M0 18 a18 18 0 0 1 36 0" fill="url(#donutGradient)" mask="url(#myMask)"></path>
+                                <path d="M0 18 a18 18 0 0 1 36 0" stroke="#F6C833" stroke-width=".5" fill="none" stroke-dasharray=".2 2" stroke-dashoffset="21.3"></path>
+                                <circle cx="0" cy="18" r="1" fill="#F6C833" style="transform: rotate(122.684deg); transform-origin: 18px 18px;"></circle>
+                                <line opacity="0.4" x1="-0.5" y1="18" x2="36.5" y2="18" stroke-width="0.2" stroke="#f6c833"></line>
+                                <line x1="0" y1="17" x2="0" y2="19" stroke-width="0.4" stroke="#f6c833"></line>
+                                <line x1="36" y1="17" x2="36" y2="19" stroke-width="0.4" stroke="#f6c833"></line>
+                            </svg>
+                        </div>
+                        <div class="period-of-hours">
+                            <span>06:12</span>
+                            <span>18:52</span>
+                        </div>
                     </div>
                 </div>
             </section>

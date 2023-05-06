@@ -34,11 +34,15 @@ body div.clouds-animation{
     top: 19%;
     left: 10%;
 }
+body div.clouds-animation img#white-cloud{
+    animation: cloud 4s ease-in-out infinite;
+}
 body div.clouds-animation img#gray-cloud{
     position: absolute;
     left: 35%;
     bottom: 35%;
     z-index: -1;
+    animation: cloud 4s ease-in-out infinite .25s;
 }
 body main section.main-content{
     position: relative;
@@ -156,9 +160,31 @@ body main section.secondary-content section.extra-weather-information div.sunset
     background-color: #6D67D0;
 }
 body main section.secondary-content section.extra-weather-information div.sunset-time div.time-period{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
     width: 90%;
     height: 45%;
+    position: relative;
+
     text-align: center;
+    margin-bottom: 20px;
+}
+body main section.secondary-content section.extra-weather-information div.sunset-time div.time-period span.current-time{
+    position: absolute;
+    bottom: 50%;
+}
+body main section.secondary-content section.extra-weather-information div.sunset-time div.time-period div.time-period-chart{
+    width: 90%;
+}
+body main section.secondary-content section.extra-weather-information div.sunset-time div.time-period div.period-of-hours{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
 }
 body main section.secondary-content section.extra-weather-information div.title-content{
     display: flex;
@@ -180,4 +206,12 @@ body main section.secondary-content section.predictions div.forecast{
     align-items: center;
     flex-direction: column;
     gap: 20px;
+}
+@keyframes cloud{
+    0%, 100%{
+      transform: translate(0);
+    }
+    50%{
+      transform: translate(1.6rem);
+    }
 }
