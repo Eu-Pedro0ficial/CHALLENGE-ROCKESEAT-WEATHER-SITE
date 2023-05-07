@@ -275,7 +275,6 @@ body main section.secondary-content section.predictions div.forecast{
 }
 @media(max-height: 650px){
     body main{
-        border: 1px solid red;
         height: 100%;
     }
     body main section.main-content, body main section.secondary-content{
