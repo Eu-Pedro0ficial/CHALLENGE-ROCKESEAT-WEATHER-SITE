@@ -97,6 +97,7 @@ body main section.main-content div.weather-information-container{
     align-items: flex-end;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 10px;
     padding-bottom: 3px;
     height: 30%;
 }
@@ -265,6 +266,11 @@ body main section.secondary-content section.predictions div.forecast{
 @media(max-width: 500px){
     body main section.main-content div.climate{
         height: 45%;
+    }
+}
+@media(max-width: 365px){
+    body main section.main-content div.climate{
+        height: 38%;
     }
 }
 @media(max-height: 650px){
